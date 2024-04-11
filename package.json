@@ -1,0 +1,27 @@
+{
+	"name": "b-conurba",
+	"version": "0.0.1",
+	"description": "backend for conurban universities app",
+	"main": "main.js",
+	"type": "module",
+	"scripts": {
+		"dev": "nodemon main.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"conurbano",
+		"app",
+		"back-end",
+		"universidades",
+		"universidad",
+		"buenos-aires"
+	],
+	"author": "UPE",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.19.2"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.0"
+	}
+}

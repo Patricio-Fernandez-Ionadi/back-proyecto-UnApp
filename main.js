@@ -1,5 +1,7 @@
 import Express from 'express'
 
+import { resolve } from 'node:path'
+
 import {
 	eventosRouter,
 	librosRouter,
@@ -9,9 +11,10 @@ import {
 
 const app = Express()
 
+const { pathname: root } = new URL('./', import.meta.url)
+
 app.get('/', (req, res) => {
-	console.log('app get')
-	res.json({ message: 'Applicacion on' })
+	res.sendFile(resolve(process.cwd(), 'public/index.html'))
 })
 
 app.use('/users', userRouter)

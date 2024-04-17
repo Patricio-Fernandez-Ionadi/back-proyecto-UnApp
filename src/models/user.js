@@ -7,8 +7,8 @@ const user = {
 	correo: '',
 	telefono: '',
 	// --
-	escuela: '',
-	carrera: '',
+	escuela: 'escuela a mano o id de institucion',
+	carrera: 'carrera a mano o id ed carrera ver que seria mejor',
 	inscripto: ['..eventos (id)...'],
 	// --
 	creador: false,
